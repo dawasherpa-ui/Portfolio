@@ -1,0 +1,343 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: aliceblue; */
+  font-family: outfit;
+  overflow-x: hidden;
+}
+header {
+  background-color: rgb(194, 194, 243);
+  border-radius: 0px 0px 5px 5px;
+  font-family: Roboto;
+  position: sticky;
+  z-index: 100;
+  width: 100vw;
+  height: 60px;
+  top: 0px;
+}
+.menu-bar {
+  display: none;
+  text-align: end;
+  margin-right: 10vw;
+  padding: 10px;
+}
+.menu-bar span {
+  width: 40px;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: end;
+  margin-left: 200px;
+  text-align: center;
+  height: 60px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: hsl(218, 44%, 22%);
+  font-size: 19px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.navigation {
+  flex-grow: 2;
+  display: flex;
+  justify-content: end;
+}
+.navigation a {
+  padding-inline: 20px;
+}
+.hire {
+  flex-grow: 1;
+}
+.hire-btn {
+  background-color: rgba(77, 74, 247, 0.863);
+  padding: 10px;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.hire-btn:hover {
+  background-color: rgba(59, 78, 155, 0.692);
+}
+.hire-btn:active {
+  position: relative;
+  top: 1px;
+  background-color: rgb(59, 78, 155);
+}
+
+#home {
+  background-color: rgba(204, 198, 241, 0.61);
+  background-image: url(image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content {
+  margin: 5vh 0px 15vh 0px;
+  width: 100vw;
+  padding-block: 5vw;
+  padding-inline: 10vw;
+  box-shadow: 0px 1px 12px 0px;
+  background-color: rgba(240, 248, 255, 0.486);
+  text-align: left;
+}
+.home-content img {
+  width: 160px;
+  border-radius: 50%;
+}
+.home-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.home-content p {
+  font-size: 1.2rem;
+  color: hsl(217, 43%, 20%);
+}
+.wrap button {
+  border: none;
+  background-color: rgba(77, 74, 247, 0.863);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5px;
+  padding-block: 10px;
+  padding-inline: 15px;
+}
+.wrap button:hover {
+  background-color: rgba(59, 78, 155, 0.692);
+}
+.wrap button:active {
+  position: relative;
+  top: 1px;
+  background-color: rgb(59, 78, 155);
+}
+#skills {
+  background-color: rgba(172, 166, 166, 0.452);
+  box-shadow: 0px 1px 12px 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-content {
+  width: 100vw;
+}
+.skill-wrap {
+  background-color: rgba(255, 255, 255, 0.644);
+  box-shadow: 0px 1px 12px rgb(66, 66, 66);
+  width: 100vw;
+  text-align: left;
+  color: rgb(19, 18, 18);
+  display: flex;
+  justify-content: center;
+}
+.skill-text {
+  flex-grow: 1;
+  padding: 5vh 5vw 5vh 10vw;
+}
+.skill-wrap h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.skill-wrap p {
+  font-size: 1.2rem;
+  color: hsl(217, 43%, 20%);
+}
+.description {
+  padding-top: 20px;
+  display: flex;
+}
+.description figure {
+  text-align: center;
+  font-weight: 600;
+}
+.description img {
+  width: 80px;
+}
+.javascript img {
+  width: 58px;
+}
+
+.skill-img {
+  flex-grow: 1;
+  padding: 5vw;
+  text-align: center;
+}
+.skill-img img {
+  width: 350px;
+  border-radius: 5px;
+}
+#works {
+  background-image: url(image/layout.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.work-content {
+  background-color: rgba(255, 255, 255, 0.671);
+  border-radius: 10px;
+  margin-inline: 10vw;
+  padding-inline: 5vw;
+  width: 50vw;
+  transition: transform 0.2s;
+  padding-block: 5vh;
+  box-shadow: 0px 1px 12px rgb(0, 0, 0);
+}
+.work-content:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.work-wrap {
+  color: rgb(20, 19, 19);
+}
+.work-wrap h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.work-wrap p {
+  font-size: 1.2rem;
+  color: hsl(216, 47%, 12%);
+}
+.work-wrap img {
+  width: 60px;
+  float: right;
+}
+footer {
+  background-color: rgba(224, 222, 222, 0.678);
+  height: 50vh;
+  border-top: 1px solid rgb(70, 68, 68);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 50vw;
+}
+.contact-text h2 {
+  color: rgb(20, 20, 20);
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.contact-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(216, 47%, 12%);
+}
+.contact-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  padding-top: 20px;
+  gap: 15px;
+}
+.contact-img img {
+  width: 50px;
+}
+/* responsive for mobile devices */
+@media (max-width: 52rem) {
+  nav {
+    display: flex;
+    margin-inline: 5vw;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .navigation {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    flex-grow: 3;
+  }
+  .navigation a {
+    font-size: 17px;
+  }
+  .hire-btn {
+    font-size: 17px;
+  }
+  .hire {
+    flex-grow: 3;
+  }
+  .menu-bar {
+    display: block;
+    flex-grow: 1;
+  }
+  .wrap img {
+    width: 130px;
+  }
+  .skill-img {
+    display: none;
+  }
+  .skill-wrap {
+    background-color: rgb(172, 170, 169);
+    background-image: url(image/skills.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+  .home-content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .home-content p {
+    font-size: 1rem;
+    color: hsl(217, 43%, 20%);
+  }
+  .skill-wrap h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .skill-wrap p {
+    font-size: 1rem;
+    color: hsl(217, 43%, 20%);
+  }
+  .work-wrap h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .work-wrap p {
+    font-size: 1rem;
+    color: hsl(216, 47%, 12%);
+  }
+  .contact-text h2 {
+    color: rgb(20, 20, 20);
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .contact-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(216, 47%, 12%);
+  }
+  .contact-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-img img {
+    width: 30px;
+  }
+}
